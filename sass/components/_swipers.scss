@@ -1,6 +1,6 @@
 .swiper-wrapper {
   width: 100%;
-  height: 35rem;
+  // height: 35rem;
   position: relative;
 }
 
@@ -9,21 +9,102 @@
   font-size: 18px;
   background: #fff; /* Set background color or image for the slides */
   position: relative;
-
+  width: 100%;
   height: 100%;
-  // width: 100%;
   object-fit: fill;
   background-repeat: repeat-x;
   background-position-x: center;
 
+  .content {
+    width: 50%;
+    height: 100%;
+    @include column;
+    @include center;
+    align-items: start;
+    padding: 3rem;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #4f4f4f;
+      text-transform: uppercase;
+    }
+    p {
+      text-align: left;
+      color: #4f4f4f;
+    }
+    .buttons {
+      @include row;
+      button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 0.3rem;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      button:first-child {
+        background-color: #e58f39;
+        color: white;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: #e58f39c7;
+          color: white;
+        }
+      }
+
+      button:last-child {
+        background-color: white;
+        color: #4f4f4f;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: #4f4f4f;
+          color: white;
+        }
+      }
+    }
+  }
+
   &__one {
     background: url("https://anpsthemes.com/constructo-new-demos/7/wp-content/uploads/2017/06/bigupdateslider7v1.jpg");
+
+    .content--one {
+      h1 {
+        span {
+          color: #e58f39;
+        }
+      }
+    }
   }
 
   &__two {
     background: url("https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/sliders2-2.jpg");
+    .content--two {
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
   }
   &__three {
     background: url("	https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/slider-2.jpg");
+    .content--three {
+      align-items: center;
+      width: 50%;
+      margin: auto;
+      h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+      p {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
   }
 }

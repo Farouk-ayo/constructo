@@ -2,12 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Montserrat;
+  font-family: "PT Sans", sans-serif;
 }
 
 .swiper-wrapper {
   width: 100%;
-  height: 35rem;
   position: relative;
 }
 
@@ -16,19 +15,94 @@
   font-size: 18px;
   background: #fff; /* Set background color or image for the slides */
   position: relative;
+  width: 100%;
   height: 100%;
   object-fit: fill;
   background-repeat: repeat-x;
   background-position-x: center;
 }
+.swiper-slide .content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  padding: 3rem;
+}
+.swiper-slide .content h1 {
+  font-size: 2.5rem;
+  color: #4f4f4f;
+  text-transform: uppercase;
+}
+.swiper-slide .content p {
+  text-align: left;
+  color: #4f4f4f;
+}
+.swiper-slide .content .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.swiper-slide .content .buttons button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.swiper-slide .content .buttons button:first-child {
+  background-color: #e58f39;
+  color: white;
+  transition: all 0.5s;
+}
+.swiper-slide .content .buttons button:first-child:hover {
+  background-color: rgba(229, 143, 57, 0.7803921569);
+  color: white;
+}
+.swiper-slide .content .buttons button:last-child {
+  background-color: white;
+  color: #4f4f4f;
+  transition: all 0.5s;
+}
+.swiper-slide .content .buttons button:last-child:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
 .swiper-slide__one {
   background: url("https://anpsthemes.com/constructo-new-demos/7/wp-content/uploads/2017/06/bigupdateslider7v1.jpg");
+}
+.swiper-slide__one .content--one h1 span {
+  color: #e58f39;
 }
 .swiper-slide__two {
   background: url("https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/sliders2-2.jpg");
 }
+.swiper-slide__two .content--two h1 {
+  color: white;
+}
+.swiper-slide__two .content--two p {
+  color: white;
+}
 .swiper-slide__three {
   background: url("	https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/slider-2.jpg");
+}
+.swiper-slide__three .content--three {
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.swiper-slide__three .content--three h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.swiper-slide__three .content--three p {
+  color: white;
+  text-transform: uppercase;
 }
 
 .social {
@@ -175,6 +249,80 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+.whatWeDo {
+  position: relative;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background: #f5f5f5;
+}
+.whatWeDo--con {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.whatWeDo--link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #e58f39;
+  color: white;
+  transition: all 0.5s;
+}
+.whatWeDo--link:hover {
+  background-color: rgba(229, 143, 57, 0.7803921569);
+  color: white;
+}
+.whatWeDo a {
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.whatWeDo a figure {
+  position: relative;
+}
+.whatWeDo a figure image {
+  height: 100%;
+  object-fit: cover;
+}
+.whatWeDo a figure figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.whatWeDo a .details {
+  padding: 0rem 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.whatWeDo a .details h4 {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.whatWeDo a .details div {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: rgba(229, 143, 57, 0.8039215686);
+}
+.whatWeDo a .details p {
+  color: #4f4f4f;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
