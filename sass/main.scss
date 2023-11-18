@@ -1,0 +1,21 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/swipers";
+
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/contact";
+@import "layouts/info";
+@import "layouts/nav";
+
+@import "pages/about";
+@import "pages/blogs";
+@import "pages/contactUs";
+@import "pages/home";
+@import "pages/projects";
+@import "pages/shop";

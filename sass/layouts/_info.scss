@@ -1,0 +1,57 @@
+.info {
+  @include row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+
+  &__logo {
+    height: 100px;
+    width: 130px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__contact {
+    @include row;
+    @include center;
+    padding: 1rem;
+    color: #ffffff00;
+
+    &__each {
+      @include row;
+      @include center;
+      position: relative;
+      div {
+        position: relative;
+        @include row($gap: 0rem);
+        @include center;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 50%;
+        border: #e58f39cd solid 0.2rem;
+      }
+      .arrow {
+        font-size: 30px; /* Adjust the arrow size as needed */
+        color: #e58f39cd; /* Adjust the arrow color as needed */
+      }
+      span {
+        @include column($gap: 0.3rem);
+        color: black;
+        h6 {
+          color: black;
+          font-weight: 500;
+          font-size: 1rem;
+        }
+        p {
+          color: #848484;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

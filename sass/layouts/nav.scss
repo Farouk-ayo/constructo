@@ -1,0 +1,29 @@
+.nav {
+  @include row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.4rem 2rem;
+
+  background-color: #363636;
+}
+
+.page--links {
+  @include row($gap: 3rem);
+  @include center;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: #e58f39;
+  }
+}
+
+.search {
+  @include row;
+  @include center;
+}

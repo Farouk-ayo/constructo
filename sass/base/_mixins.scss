@@ -1,0 +1,14 @@
+@mixin row($gap: 1rem) {
+  display: flex;
+  flex-direction: row;
+  gap: $gap;
+}
+@mixin column($gap: 1rem) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+@mixin center {
+  justify-content: center;
+  align-items: center;
+}
