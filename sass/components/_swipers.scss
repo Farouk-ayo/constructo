@@ -19,21 +19,23 @@
   background-position-x: center;
 
   .content {
-    width: 50%;
+    width: 100%;
     height: 100%;
     @include column;
     @include center;
     align-items: start;
-    padding: 3rem;
+    padding: 4rem;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #4f4f4f;
       text-transform: uppercase;
+      letter-spacing: 0.5rem;
     }
     p {
       text-align: left;
       color: #4f4f4f;
+      width: 50%;
     }
     .buttons {
       @include row;
@@ -107,6 +109,7 @@
       p {
         color: white;
         text-transform: uppercase;
+        text-align: center;
       }
     }
   }
