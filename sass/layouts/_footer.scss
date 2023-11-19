@@ -1,0 +1,80 @@
+.footer {
+  padding: 3rem;
+  background-color: #242424;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @include row;
+}
+.footer--content {
+  @include column($gap: 2rem);
+  width: calc(100% / 4.4);
+  div {
+    @include column;
+    h1 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  p {
+    color: #858585;
+    font-size: 0.8rem;
+  }
+  .list {
+    @include column;
+    .each-list {
+      list-style: none;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #858585ac;
+
+      a {
+        @include row($gap: 0.5rem);
+        align-items: center;
+        text-decoration: none;
+        color: #858585;
+        transition: all 0.5s;
+      }
+      a:hover {
+        color: #e58f39;
+      }
+    }
+  }
+}
+.caption {
+  @include row;
+  @include center;
+  background-color: #0f0f0f;
+  padding: 1rem;
+  color: white;
+}
+
+.tag-words {
+  h6 {
+    @include row;
+    flex-wrap: wrap;
+    span {
+      padding: 0.5rem;
+      color: #858585;
+      font-size: 1rem;
+      border: 1px solid #858585b1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.workingHours {
+  @include column;
+  .each-hour {
+    @include row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #858585ac;
+
+    p {
+      color: #858585;
+    }
+    h4 {
+      color: white;
+    }
+  }
+}

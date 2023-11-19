@@ -171,7 +171,44 @@
 .news--details {
   @include column;
   width: calc(100% / 3.5);
-  img {
+  .imgNews {
     object-fit: cover;
+    height: 17rem;
+  }
+  .news--info {
+    @include column;
+    h4 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    div {
+      @include row($gap: 2.5rem);
+      text-transform: uppercase;
+    }
+    span {
+      @include row($gap: 0.5rem);
+      @include center;
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+      color: #4f4f4f;
+    }
+  }
+}
+
+.clients {
+  background-color: white;
+  @include column;
+  @include center;
+  padding: 2rem;
+}
+
+.client--logos {
+  @include row;
+  @include center;
+  img {
+    height: 7rem;
+    width: 14rem;
   }
 }
