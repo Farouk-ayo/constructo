@@ -25,16 +25,17 @@
     @include center;
     align-items: start;
     padding: 4rem;
+    backdrop-filter: brightness(0.5);
 
     h1 {
       font-size: 3rem;
-      color: #4f4f4f;
+      color: whitesmoke;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
     }
     p {
       text-align: left;
-      color: #4f4f4f;
+      color: whitesmoke;
       width: 50%;
     }
     .buttons {
@@ -73,7 +74,7 @@
   }
 
   &__one {
-    background: url("https://anpsthemes.com/constructo-new-demos/7/wp-content/uploads/2017/06/bigupdateslider7v1.jpg");
+    background: url("https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/sliders2-2.jpg");
 
     .content--one {
       h1 {
@@ -85,29 +86,21 @@
   }
 
   &__two {
-    background: url("https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/sliders2-2.jpg");
-    .content--two {
-      h1 {
-        color: white;
-      }
-      p {
-        color: white;
-      }
-    }
+    background: url("../images/pipe2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   &__three {
     background: url("	https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/slider-2.jpg");
     .content--three {
       align-items: center;
-      width: 50%;
+      width: 100%;
       margin: auto;
       h1 {
-        color: white;
         text-transform: uppercase;
         font-size: 3rem;
       }
       p {
-        color: white;
         text-transform: uppercase;
         text-align: center;
       }

@@ -1,0 +1,36 @@
+.blog {
+  @include column;
+  max-width: 70%;
+}
+
+.each--blog {
+  @include column;
+  padding: 2rem;
+  h6 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+  }
+  hr {
+    border: none;
+    border-bottom: #4f4f4f4e 0.5px solid;
+  }
+  p {
+    color: #4f4f4f;
+    font-size: 0.8rem;
+  }
+  .blog--img {
+    object-fit: cover;
+    height: 25rem;
+  }
+}
+
+.icons--blog {
+  @include row;
+  align-items: center;
+  span {
+    @include row($gap: 0.5rem);
+    align-items: center;
+    padding: 0.5rem;
+  }
+}

@@ -22,4 +22,39 @@ document.addEventListener("DOMContentLoaded", function () {
     effect: "fade",
     crossFade: "true",
   });
+
+  const fixedUpButton = document.querySelector(".fixedUp");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      fixedUpButton.style.display = "block";
+    } else {
+      fixedUpButton.style.display = "none";
+    }
+  });
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+const currentPage = window.location.href;
+const navLinks = document.querySelectorAll(".page--links a");
+
+navLinks.forEach(function (link) {
+  if (currentPage.includes(link.getAttribute("href"))) {
+    link.classList.add("active-link");
+  }
+});
+
+const navLinksFooter = document.querySelectorAll(".each-list a");
+
+navLinksFooter.forEach(function (link) {
+  console.log(link.getAttribute("href"), currentPage);
+  if (currentPage.includes(link.getAttribute("href"))) {
+    link.classList.add("active-link--footer");
+  }
 });
