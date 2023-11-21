@@ -1,9 +1,4 @@
 .social {
-  @include row;
-  background-color: #f9f9f9;
-  padding: 0rem 2rem;
-  border-bottom: $border;
-
   &__links {
     @include row;
     @include center;
@@ -31,4 +26,59 @@
 
 .empty--div {
   width: 20%;
+}
+
+.social--details {
+  @include row;
+  background-color: #f9f9f9;
+  padding: 0rem 2rem;
+  border-bottom: $border;
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+
+.review--details {
+  display: none;
+  img {
+    cursor: pointer;
+  }
+  @include respond(tab-port) {
+    @include column;
+    @include center;
+    background-color: #f9f9f9;
+    padding: 0.6rem 2rem;
+    border-bottom: $border;
+  }
+}
+.flip {
+  @include column;
+  display: none;
+  transition: transform 0.5s ease-in-out;
+}
+.flip.show {
+  display: block;
+}
+
+.social__number--flip {
+  @include row;
+  @include center;
+  border-left: $border;
+  & div {
+    @include row($gap: 0.5rem);
+    @include center;
+    border-right: $border;
+    p {
+      font-size: 1rem;
+      color: $grey--light;
+    }
+  }
+}
+
+.social__links--flip {
+  @include row;
+  @include center;
+  padding: 1rem;
+  border-left: $border;
+  border-right: $border;
 }

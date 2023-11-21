@@ -58,3 +58,8 @@ navLinksFooter.forEach(function (link) {
     link.classList.add("active-link--footer");
   }
 });
+
+function toggleFlip() {
+  const flipDiv = document.querySelector(".flip");
+  flipDiv.classList.toggle("show");
+}
