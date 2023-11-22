@@ -25,4 +25,14 @@
   right: 2rem;
   cursor: pointer;
   display: none;
+  img {
+    @include respond(phone) {
+      height: 4rem;
+      width: 4rem;
+    }
+    @include respond(small-phone) {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
 }

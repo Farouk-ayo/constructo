@@ -5,6 +5,10 @@
 .swiper {
   width: 100%;
   height: 35rem;
+
+  @include respond(phone) {
+    height: 45rem;
+  }
 }
 
 .swiper-slide {
@@ -32,11 +36,17 @@
       color: whitesmoke;
       text-transform: uppercase;
       letter-spacing: 0.5rem;
+      @include respond(tab-port) {
+        text-align: left;
+      }
     }
     p {
       text-align: left;
       color: whitesmoke;
       width: 50%;
+      @include respond(phone) {
+        width: 80%;
+      }
     }
     .buttons {
       @include row;
@@ -86,9 +96,7 @@
   }
 
   &__two {
-    background: url("../images/pipe2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url("https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/slider-2.jpg");
   }
   &__three {
     background: url("	https://anpsthemes.com/constructo-new-demos/6/wp-content/uploads/revslider/slider-2/slider-2.jpg");
