@@ -46,6 +46,16 @@
         text-decoration: none;
         color: #858585;
         transition: all 0.5s;
+        img {
+          @include respond(phone) {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+          @include respond(small-phone) {
+            height: 1rem;
+            width: 1rem;
+          }
+        }
       }
       a:hover {
         color: #e58f39;

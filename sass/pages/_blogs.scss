@@ -1,6 +1,12 @@
 .blog {
   @include column;
   max-width: 70%;
+  @include respond(tab-port) {
+    max-width: 90%;
+  }
+  @include respond(phone) {
+    max-width: 100%;
+  }
 }
 
 .each--blog {
@@ -28,9 +34,23 @@
 .icons--blog {
   @include row;
   align-items: center;
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+  }
   span {
     @include row($gap: 0.5rem);
     align-items: center;
     padding: 0.5rem;
+    img {
+      @include respond(tab-port) {
+        height: 2rem;
+        width: 2rem;
+      }
+      @include respond(phone) {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
   }
 }

@@ -21,39 +21,76 @@
   </head>
   <body>
     <section class="social">
-
       <span class="social--details">
-      <div class="social__links">
-        <a href="">
-          <img src="../../icons/facebook.svg" alt="" />
-        </a>
-        <a href="">
-          <img src="../../icons/twitter.svg" alt="" />
-        </a>
-        <a href="">
-          <img src="../../icons/linkedin.svg" alt="" />
-        </a>
-        <a href="">
-          <img src="../../icons/google-plus.svg" alt="" />
-        </a>
-      </div>
-      <div class="empty--div"></div>
-      <div class="social__number">
-        <div>
-          <img src="../../icons/time.svg" alt="" />
-          <p>Mon - Sat: 7:00 - 17:00</p>
+        <div class="social__links">
+          <a href="">
+            <img src="../icons/facebook.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../icons/twitter.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../icons/linkedin.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../icons/google-plus.svg" alt="" />
+          </a>
         </div>
-        <div>
-          <img src="../../icons/call.svg" alt="" />
-          <p>+ 234 80 739 46451</p>
+        <div class="empty--div"></div>
+        <div class="social__number--flip">
+          <div>
+            <img src="../icons/time.svg" alt="" />
+            <p>Mon - Sat: 7:00 - 17:00</p>
+          </div>
+          <div>
+            <img src="../icons/call.svg" alt="" />
+            <p>+ 234 80 739 46451</p>
+          </div>
+          <div>
+            <img src="../icons/mail.svg" alt="" />
+            <p>info@yourdomain.com</p>
+          </div>
         </div>
-        <div>
-          <img src="../../icons/mail.svg" alt="" />
-          <p>info@yourdomain.com</p>
-        </div>
-      </div>
-    </span>
+      </span>
 
+      <span class="review--details">
+        <div class="flip">
+          <div class="social__links--flip">
+            <a href="">
+              <img src="../icons/facebook.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="../icons/twitter.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="../icons/linkedin.svg" alt="" />
+            </a>
+            <a href="">
+              <img src="../icons/google-plus.svg" alt="" />
+            </a>
+          </div>
+          <div class="social__number--flip">
+            <div>
+              <img src="../icons/time.svg" alt="" />
+              <p>Mon - Sat: 7:00 - 17:00</p>
+            </div>
+            <div>
+              <img src="../icons/call.svg" alt="" />
+              <p>+ 234 80 739 46451</p>
+            </div>
+            <div>
+              <img src="../icons/mail.svg" alt="" />
+              <p>info@yourdomain.com</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../icons/arrowflip.svg"
+          alt=""
+          onclick="toggleFlip()"
+          id="flipButton"
+        />
+      </span>
     </section>
     <section class="info">
       <div class="info__logo">
@@ -94,8 +131,11 @@
           </span>
         </div>
       </div>
-  
-
+      <div class="navbar--tog">
+        <label for="navbar--toggle" class="navbar__button">
+          <span class="navbar__icon">&nbsp;</span>
+        </label>
+      </div>
     </section>
     <nav class="nav">
       <div class="page--links">
@@ -111,6 +151,27 @@
         <img src="../icons/search.svg" alt="" />
       </div>
     </nav>
+    <div class="toggle--nav">
+      <input type="checkbox" class="navbar__checkbox" id="navbar--toggle" />
+      <nav class="navbar">
+        <ul class="navbar--toggle__toggler">
+          <li class="nav--each"><a href="../home.html">Home</a></li>
+          <li class="nav--each"><a href="project.html">Projects</a></li>
+          <li class="nav--each">
+            <a href="whatWeDo.html">What We Do</a>
+          </li>
+          <li class="nav--each"><a href="about.html">About us</a></li>
+          <li class="nav--each"><a href="blog.html">Blog</a></li>
+          <li
+            class="nav--each"
+            id="
+        "
+          >
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="otherpages">
       <h6>What we do</h2>
       <span>
@@ -261,5 +322,8 @@
         </div>
       </footer>
       <div class="caption">© 2023 Constructor, All rights reserved</div>
+      <div class="fixedUp" onclick="scrollToTop()">
+        <img src="../icons/fixedUp.svg" alt="scroll to top" />
+      </div>
     </body>
   </html>
